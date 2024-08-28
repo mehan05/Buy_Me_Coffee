@@ -1,13 +1,31 @@
-# Sample Hardhat Project
+# Project Setup and Deployment Guide
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a Hardhat Ignition module that deploys that contract.
+This guide provides instructions to set up and deploy your Hardhat development environment and run the ChaiClient application.
 
-Try running some of the following tasks:
+## Prerequisites
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
+Ensure you have the following installed:
+- [Node.js](https://nodejs.org/)
+- [npm](https://www.npmjs.com/)
+
+## Instructions
+
+### 1. Start Hardhat Node
+
+To start a local Ethereum node, run:
+
+```bash
 npx hardhat node
-npx hardhat ignition deploy ./ignition/modules/Lock.js
 ```
+### 2. Add Your Wallet PrivateKey
+
+```bash
+PRIVATE_KEY=your_wallet_private_key_here
+```
+
+### 3. Deploy Smart Contracts
+
+```bash
+npx hardhat run scripts/deploy.js --network localhost
+```
+### 
