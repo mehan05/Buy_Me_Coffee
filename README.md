@@ -28,4 +28,8 @@ PRIVATE_KEY=your_wallet_private_key_here
 ```bash
 npx hardhat run scripts/deploy.js --network localhost
 ```
-### 
+###  4. Run FrontEnd
+```bash
+cd client/ChaiClient
+npm run dev
+```
